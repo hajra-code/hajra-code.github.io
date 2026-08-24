@@ -1,0 +1,482 @@
+/* ================================
+   Hajra Bashir - Portfolio CSS
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f7fb;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #217dbb;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    background: linear-gradient(135deg, #1f3c5b, #2c3e50);
+    color: white;
+    padding: 65px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    min-height: 30px;
+}
+
+
+/* ================================
+   LINKEDIN BADGE
+   ================================ */
+
+.badge-base {
+    margin: 25px auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+
+/* ================================
+   SECTIONS
+   ================================ */
+
+section {
+    background: #ffffff;
+    margin: 25px 0;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+    scroll-margin-top: 30px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.09);
+}
+
+section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 1.7rem;
+}
+
+
+/* ================================
+   SKILLS
+   ================================ */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #3498db;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.skill-tag:hover {
+    background: #217dbb;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   PILLS
+   ================================ */
+
+.pill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pill-item {
+    background: #ecf5fb;
+    color: #2c3e50;
+    border: 1px solid #d6eaf7;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.pill-item:hover {
+    background: #dff0fb;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   PROJECTS
+   ================================ */
+
+.project {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #e5e9ed;
+    border-radius: 10px;
+    background: #fafcfe;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.project:last-of-type {
+    margin-bottom: 20px;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+    border-color: #3498db;
+    box-shadow: 0 6px 18px rgba(52, 152, 219, 0.12);
+}
+
+.project h3 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.project p {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+
+/* ================================
+   EXPERIENCE & EDUCATION
+   ================================ */
+
+.item {
+    margin-bottom: 25px;
+    padding-left: 18px;
+    border-left: 3px solid #3498db;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item h3 {
+    color: #2c3e50;
+    margin-bottom: 3px;
+    font-size: 1.15rem;
+}
+
+.item .role {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.item .date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+
+/* ================================
+   CERTIFICATIONS
+   ================================ */
+
+.certs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cert-item {
+    background: #ecf0f1;
+    color: #34495e;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.cert-item:hover {
+    background: #dfe6e9;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   AWARDS
+   ================================ */
+
+.awards-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.awards-list li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.awards-list li:last-child {
+    margin-bottom: 0;
+}
+
+.awards-list li::before {
+    content: "🏆";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* ================================
+   CONTACT
+   ================================ */
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.contact-info span {
+    background: #f5f8fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+
+/* ================================
+   SCROLL TOP BUTTON
+   ================================ */
+
+.scroll-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #3498db;
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease,
+        background 0.3s ease;
+
+    z-index: 1000;
+}
+
+.scroll-top:hover {
+    background: #217dbb;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* ================================
+   SCROLL REVEAL ANIMATION
+   ================================ */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ================================
+   NAVIGATION ACTIVE LINK
+   ================================ */
+
+.nav-links a.active {
+    color: #3498db;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 45px 20px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 25px 20px;
+        margin: 18px 0;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-info span {
+        text-align: center;
+    }
+
+    .scroll-top {
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+
+/* ================================
+   SMALL MOBILE DEVICES
+   ================================ */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    .skill-tag,
+    .pill-item,
+    .cert-item {
+        font-size: 0.82rem;
+        padding: 7px 11px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+}
